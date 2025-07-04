@@ -1,0 +1,26 @@
+{
+  "name": "moodle-assignment",
+  "version": "1.0.0",
+  "description": "TypeScript library for interacting with Moodle",
+  "main": "dist/MoodleClient.js",
+  "types": "dist/MoodleClient.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node index.ts",
+    "dev": "ts-node --watch index.ts"
+  },
+  "keywords": ["moodle", "api", "client", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.4",
+    "@types/cheerio": "^0.22.31",
+    "ts-node": "^10.9.0"
+  }
+}
