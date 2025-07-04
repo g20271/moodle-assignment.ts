@@ -1,13 +1,19 @@
 {
-  "name": "moodle-assignment",
+  "name": "@g20271/moodle-assignment.ts",
   "version": "1.0.0",
   "description": "TypeScript library for interacting with Moodle",
-  "main": "dist/MoodleClient.js",
-  "types": "dist/MoodleClient.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
-    "start": "ts-node index.ts",
-    "dev": "ts-node --watch index.ts"
+    "prepublishOnly": "npm run build",
+    "start": "ts-node example.ts",
+    "dev": "ts-node --watch example.ts"
   },
   "keywords": [
     "moodle",
@@ -15,8 +21,15 @@
     "client",
     "typescript"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "akatorih0913 <akatorih0913@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akatorih0913/moodle-assignment.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akatorih0913/moodle-assignment.ts/issues"
+  },
+  "homepage": "https://github.com/akatorih0913/moodle-assignment.ts#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^17.0.1",

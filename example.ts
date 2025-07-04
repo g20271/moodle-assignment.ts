@@ -1,3 +1,7 @@
+// ライブラリとして使用する場合のインポート例
+// import { MoodleClient, Assignment } from 'moodle-assignment';
+
+// ローカル開発用のインポート
 import { MoodleClient, Assignment } from './src/MoodleClient';
 import * as dotenv from 'dotenv';
 
@@ -26,8 +30,6 @@ async function main() {
         const allAssignments = await client.getAllAssignments();
         console.log(`Found ${allAssignments.length} upcoming assignments.`);
         if (allAssignments.length > 0) {
-
-            console.dir(allAssignments)
             printAssignments(allAssignments.slice(0, 3)); // 最初の3件だけ表示
         }
 
