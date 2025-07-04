@@ -5,7 +5,7 @@ TypeScript library for interacting with Moodle assignments and calendar events.
 ## Installation
 
 ```bash
-npm install @g20271/moodle-assignment.ts
+npm install git+https://github.com/g20271/moodle-assignment.ts
 ```
 
 ## Usage
